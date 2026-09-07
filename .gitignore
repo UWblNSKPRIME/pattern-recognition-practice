@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+*.py[cod]
 
 # C extensions
 *.so
@@ -216,3 +217,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Службові файли Jupyter
+.ipynb_checkpoints/
+
+# Службові файли операційних систем
+.DS_Store
+Thumbs.db
