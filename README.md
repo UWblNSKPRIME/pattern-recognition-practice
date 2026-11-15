@@ -62,3 +62,15 @@
 | DummyClassifier | 0.333 | 0.113 |
 | DecisionTree | 0.933 | 0.936 |
 [Відкрити Notebook](notebooks/PR03_Бабич_Кирило.ipynb)
+
+## Практичні роботи 4–7: Мініпроєкт «Порівняння класичних моделей класифікації»
+**Тема:** Порівняння класичних моделей класифікації без витоку даних (kNN, Logistic Regression, SVC, GaussianNB, LDA, QDA).
+У роботі виконано:
+- підготовку даних із `ColumnTransformer` усередині `Pipeline` (імпутація, масштабування, one-hot-кодування);
+- 5-кратну стратифіковану крос-валідацію та підбір гіперпараметрів на `X_train` (242 зразки);
+- порівняння 6 класичних моделей за CV F1, Recall та ROC AUC;
+- відбір фінальної моделі (`LogisticRegression` з `penalty='l1', C=100, solver='liblinear'`, CV F1 = `0.8363 ± 0.0127`);
+- одноразове тестування на `X_test` (61 зразок): Accuracy = `0.8689`, Precision = `0.8333`, Recall = `0.8929`, F1 = `0.8621`, ROC AUC = `0.9578`;
+- збереження фінального пайплайна у `models/best_classifier.joblib`.
+
+[Опис мініпроєкту](classification-mini-project/README.md) | [Відкрити Notebook](classification-mini-project/notebooks/PR04_Бабич_Кирило.ipynb)
